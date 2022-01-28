@@ -1,8 +1,8 @@
 import React from 'react'
 import './style.scss'
 
-const CustomButton = ({ children, ...props }) => (
-    <button className='custom-button' {...props}>
+const CustomButton = ({ children, isOAuth, ...props }) => (
+    <button className={`${isOAuth ? 'oauth-button' : ''} custom-button`} {...props}>
         {children}
     </button>
 )

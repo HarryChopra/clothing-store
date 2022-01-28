@@ -7,3 +7,8 @@ a {
     text-decoration: none;
     color:black;
 }
+
+/* elements in a box (sign in) are now aligned */
+* {
+    box-sizing: border-box;
+}
